@@ -5,10 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escuela de Musica</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>Integrantes</h1>
-    <h2>Christian Lazo</h2>
-    <h2>Emmanuel Estupiñan</h2>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <i class="fas fa-drum"></i>instru<span>Music</span></a
+      >
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="./piano.html">piano</a>
+        <a href="./bateria.html">batería</a>
+        <a href="./marimba.html">marimba</a>
+      </nav>
+    </header>
+
+    <section class="main">
+      <h1>Instrumentos Musicales</h1>
+      <div class="main-content">
+        <div class="card" id="piano">
+          <div class="card-img">
+            <img src="./img/piano.png" alt="piano" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error et
+            pariatur molestias adipisci repellendus exercitationem perspiciatis
+            ducimus, perferendis corporis? Autem?
+          </p>
+        </div>
+        <div class="card" id="bateria">
+          <div class="card-img">
+            <img src="./img/bateria02.png" alt="bateria" />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error et
+            pariatur molestias adipisci repellendus exercitationem perspiciatis
+            ducimus, perferendis corporis? Autem?
+          </p>
+        </div>
+        <div class="card" id="marimba">
+          <div class="card-img">
+            <img src="./img/marimba.png" alt="marimba" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error et
+            pariatur molestias adipisci repellendus exercitationem perspiciatis
+            ducimus, perferendis corporis? Autem?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Diseñado por <span>Christian Lazo</span> &
+        <span>Emmanuel Estupiñan</span> | ©todos los derechos reservados 2022
+      </p>
+    </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
