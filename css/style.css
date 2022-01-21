@@ -65,7 +65,7 @@ body {
 }
 
 .main {
-    height: 100vh;
+    height: 100%;
     padding: 10rem 9%;
     
 }
@@ -124,6 +124,38 @@ body {
     color: red;
 }
 
+
+
+/*****************************************/
+/*Piano Styles
+/*****************************************/
+.piano {
+    height: 92vh;
+}
+.piano-content {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.piano-keys {
+    display: flex;
+}
+.key {
+    width: 4rem;
+    height: 20rem;
+    border: 0.2rem solid black;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 13px 5px #000000; 
+    box-shadow: 3px 3px 13px 5px #000000;
+    cursor: pointer;
+}
+
+.key:hover {
+    -webkit-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.68); 
+    box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.68);
+}
 
 /*****************************************/
 /*Media Queries
