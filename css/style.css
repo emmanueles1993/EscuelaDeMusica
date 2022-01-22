@@ -131,30 +131,67 @@ body {
 /*****************************************/
 .piano {
     height: 92vh;
+    padding: 10rem 9%;
+}
+
+.piano h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
 }
 .piano-content {
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: center;
+    align-items:center
 }
 .piano-keys {
     display: flex;
 }
 .key {
-    width: 4rem;
-    height: 20rem;
-    border: 0.2rem solid black;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.key .span {
+    font-size: 2rem;
+}
+
+.white {
+    width: 8rem;
+    height: 20rem;
+    border: 0.2rem solid black;
     background-color: white;
     -webkit-box-shadow: 3px 3px 13px 5px #000000; 
     box-shadow: 3px 3px 13px 5px #000000;
-    cursor: pointer;
 }
+
+.dark {
+    height: 10rem;
+    width: 3rem;
+    background-color: black;
+    margin-left: -2.5rem;
+    margin-right: -2rem;
+    z-index: 3;
+    color: white;
+}
+
 
 .key:hover {
     -webkit-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.68); 
     box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.68);
+}
+
+.active {
+    transform: translateY(1rem);
 }
 
 /*****************************************/
@@ -226,6 +263,10 @@ body {
         /* padding: 1rem; */
         display: inline-block;
         width: 90%;
+    }
+
+    .piano {
+        height: 100%;
     }
 }
 
