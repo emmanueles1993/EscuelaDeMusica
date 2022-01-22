@@ -20,6 +20,11 @@ body {
     background-color: #2b3138;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -199,14 +204,55 @@ body {
 /*Bateria Styles
 /*****************************************/
 .bateria {
-    height: 100vh;
+    height: 100%;
     padding: 10rem 9%;
 }
 
 .bateria h1 {
     font-size: 4rem;
-    color: white;
     text-align: center;
+    padding: 2rem 0;
+    color: white;
+}
+
+.bateria .bateria-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem 20%;
+}
+
+.bateria .bateria-content .bateria-content-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bateria .bateria-content .bateria-content-mid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bateria .bateria-content .bateria-content-bot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bateria .bateria-content .bateria-content-img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.bateria .bateria-content .bateria-content-img img {
+    border: 0.1rem solid black;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.78); 
+    box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.78);
+    cursor: pointer;
+}
+
+.kick {
+    margin-top: -4rem;
 }
 /*****************************************/
 /*Media Queries
@@ -267,6 +313,10 @@ body {
         display: flex;
         align-items: center;
     }
+    .bateria .bateria-content .bateria-content-img {
+        width: 12rem;
+        height: 12rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -285,6 +335,14 @@ body {
 
     .piano {
         height: 100%;
+    }
+    .bateria .bateria-content {
+        padding: 2rem 5%;
+    }
+
+    .bateria .bateria-content .bateria-content-img {
+        width: 10rem;
+        height: 10rem;
     }
 }
 
