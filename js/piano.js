@@ -30,9 +30,9 @@ function playNote(key) {
   noteAudio.currentTime = 0.2;
   noteAudio.play();
 
-  key.classList.add("active");
+  key.classList.add("active-piano");
   setTimeout(() => {
-    key.classList.remove("active");
+    key.classList.remove("active-piano");
   }, 200);
   //   noteAudio.addEventListener("ended", () => {
   //     key.classList.remove("active");

@@ -30,6 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    z-index: 1000;
 }
 
 .header .logo {
@@ -190,10 +191,23 @@ body {
     box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.68);
 }
 
-.active {
+.active-piano {
     transform: translateY(1rem);
 }
 
+/*****************************************/
+/*Bateria Styles
+/*****************************************/
+.bateria {
+    height: 100vh;
+    padding: 10rem 9%;
+}
+
+.bateria h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
 /*****************************************/
 /*Media Queries
 /*****************************************/
@@ -214,14 +228,18 @@ body {
     #menu-btn {
         display: inline-block;
     }
+    #menu-btn:hover {
+        color: red;
+    }
     #menu-btn.fa-times {
         transform: rotate(180deg);
     }
 
+
     .header .navbar {
         padding: 1rem;
         position: absolute;
-        top: 99%;
+        top: 100%;
         left: 0;
         right: 0;
         background-color: black;
