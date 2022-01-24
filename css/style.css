@@ -270,6 +270,78 @@ img {
     transform: translateX(1rem);
 }
 /*****************************************/
+/*Marimba styles
+/*****************************************/
+.marimba{
+    height: 100%;
+    padding: 10rem 9%;
+    
+}
+.marimba h1{
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+}
+.marimba .marimba-content{
+    display:flex;
+    gap: 2rem;
+align-items: center;
+}
+.bar{
+    color: white;
+    background: chocolate;
+    border-radius: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar span{
+    font-size: 2rem;
+
+}
+.bar01{
+    height: 35rem;
+    width: 8rem;
+}
+.bar02{
+    height: 33rem;
+    width: 8rem;
+}
+.bar03{
+    height: 31rem;
+    width: 8rem;
+}
+.bar04{
+    height: 29rem;
+    width: 8rem;
+}
+.bar05{
+    height: 27rem;
+    width: 8rem;
+}
+.bar06{
+    height: 25rem;
+    width: 8rem;
+}
+.bar07{
+    height: 23rem;
+    width: 8rem;
+}
+.bar08{
+    height: 21rem;
+    width: 8rem;
+}
+.bar09{
+    height: 19rem;
+    width: 8rem;
+}
+.bar10{
+    height: 17rem;
+    width: 8rem;
+}
+
+/*****************************************/
 /*Media Queries
 /*****************************************/
 
