@@ -363,6 +363,9 @@ img {
     .main {
         height: 100%;
     }
+    .piano {
+        height: 100%;
+    }
     .bateria .bateria-content .bateria-content-top {
         margin-bottom: 4rem;
     }
@@ -377,6 +380,10 @@ img {
     }
     #menu-btn.fa-times {
         transform: rotate(180deg);
+    }
+
+    .piano {
+        height: 100%;
     }
 
 
