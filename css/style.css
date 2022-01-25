@@ -358,6 +358,43 @@ img {
     background: rgb(150,75,0);
     background: radial-gradient(circle, rgba(150,75,0,1) 48%, rgba(255,149,0,1) 64%);
 }
+/*****************************************/
+/*Flauta styles
+/*****************************************/
+.flauta{
+    height: 100vh;
+    padding: 10rem 9%;
+}
+
+.flauta h1{
+    font-size: 4rem ;
+    text-align: center ;
+    padding: 2rem 0;
+    color:white;
+}
+
+.flauta .flauta-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.flauta .flauta-content .circle{
+    background: white;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
 
 /*****************************************/
 /*Media Queries
