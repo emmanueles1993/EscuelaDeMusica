@@ -17,4 +17,8 @@ function playNote(circle){
     const audioFlauta= document.getElementById(circle.dataset.note)
 audioFlauta.currentTime= 0;
 audioFlauta.play();
+circle.classList.add("flauta-active");
+setTimeout(() => {
+    circle.classList.remove("flauta-active");
+}, 200);
 }
