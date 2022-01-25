@@ -19,4 +19,10 @@ function playNote(key) {
   const noteAudio = document.getElementById(key.dataset.note);
   noteAudio.currentTime = 0;
   noteAudio.play();
+
+  key.classList.add("active-marimba");
+
+  setTimeout(() => {
+    key.classList.remove("active-marimba");
+  }, 300);
 }
