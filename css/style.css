@@ -71,6 +71,30 @@ img {
     display: none;
 }
 
+.btn {
+    margin: 1rem 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.btn button{
+    padding: 1.5rem 1rem;
+    font-size: 2rem;
+    background-color: black;
+    color: red;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    padding-right: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-top-right-radius: 3rem;
+    background: rgba(0,0,0,0.7);
+}
+
 .main {
     height: 100%;
     padding: 10rem 9%;
@@ -137,8 +161,13 @@ img {
 /*Piano Styles
 /*****************************************/
 .piano {
-    height: 92vh;
+    height: 100%;
     padding: 10rem 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
 }
 
 .piano h1 {
@@ -207,6 +236,12 @@ img {
 .bateria {
     height: 100%;
     padding: 10rem 9%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 2rem;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .bateria h1 {
@@ -214,6 +249,10 @@ img {
     text-align: center;
     padding: 2rem 0;
     color: white;
+}
+
+.bateria .modal-container {
+    margin-top: 0;
 }
 
 .bateria .bateria-content {
@@ -273,9 +312,13 @@ img {
 /*Marimba styles
 /*****************************************/
 .marimba{
-    height: 100vh;
+    height: 100%;
     padding: 10rem 9%;
-    
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 .marimba h1{
     font-size: 4rem;
@@ -365,6 +408,7 @@ img {
     height: 100vh;
     padding: 10rem 9%;
     display: flex;
+    gap: 2rem;
     flex-direction: column;
     justify-content:center;
     align-items:center;
@@ -378,7 +422,7 @@ img {
 }
 
 .flauta .flauta-img {
-    padding: 4rem 0;
+    padding: 4rem 0rem;
     height: 35rem;
     width: 35rem;
 }
@@ -403,6 +447,7 @@ img {
     -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.78); 
     box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.78);
     cursor: pointer;
+    border: 0.5rem solid black;
 }
 .flauta-active{
     background: red !important;
@@ -410,11 +455,121 @@ img {
     transform:translateY(3rem);
 }
 
+/*****************************************/
+/*Flauta styles
+/*****************************************/
+.sax {
+    height: 100%;
+    padding: 10rem 9%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sax h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+}
+
+.sax .sax-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    
+}
+.sax .sax-img {
+    padding: 4rem 4rem;
+    height: 35rem;
+    width: 35rem;
+    border-radius: 50%;
+    background: black;
+}
 
 
+.sax .sax-content .sax-item {
+    height: 7rem;
+    width: 7rem;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.78); 
+    box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.78);
+    border: 0.5rem solid  black;
+    cursor: pointer;
+}
 
 
+.sax-active {
+    transform: translateY(3rem);
+    background: red !important;
+}
 
+/*****************************************/
+/*Modal Styles
+/*****************************************/
+.modal-container {
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    animation: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    display: none;
+}
+
+.modal-container .modal {
+    background: black;
+    border-radius: 2rem;
+    height: 60%;
+    width: auto;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+.modal-container .modal img {
+    height: 20rem;
+}
+
+.modal-container .modal span{
+    color: red;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+}
+
+.modal-container .modal span:hover {
+    background: white;
+}
+
+.modal-container .modal-text h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.modal-container .modal-text p {
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.modal-active {
+    z-index: 10000;
+    display: flex;
+    animation: myModal 1s ease 0s 1 normal forwards;
+}
 
 /*****************************************/
 /*Media Queries
@@ -443,6 +598,12 @@ img {
 }
 
 @media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
     #menu-btn {
         display: inline-block;
     }
@@ -555,6 +716,11 @@ img {
         height: 5rem;
         width: 5rem;
     }
+
+    .sax .sax-content .sax-item {
+        height: 5rem;
+        width: 5rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -647,6 +813,36 @@ img {
   
     75% {
       transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+
+  @keyframes myModal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
     }
   }
 

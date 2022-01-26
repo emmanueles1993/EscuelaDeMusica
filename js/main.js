@@ -5,6 +5,18 @@ let marimba = document.getElementById("marimba");
 let menu = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".header .navbar");
 
+let modalContainer = document.querySelector(".modal-container");
+let openModal = document.getElementById("btn");
+let closeModal = document.querySelector(".close");
+
+openModal.onclick = () => {
+  modalContainer.classList.toggle("modal-active");
+};
+
+closeModal.onclick = () => {
+  modalContainer.classList.toggle("modal-active");
+};
+
 menu.onclick = () => {
   menu.classList.toggle("fa-times");
   navbar.classList.toggle("active");
