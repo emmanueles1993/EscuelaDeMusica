@@ -364,6 +364,10 @@ img {
 .flauta{
     height: 100vh;
     padding: 10rem 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
 }
 
 .flauta h1{
@@ -371,6 +375,12 @@ img {
     text-align: center ;
     padding: 2rem 0;
     color:white;
+}
+
+.flauta .flauta-img {
+    padding: 4rem 0;
+    height: 35rem;
+    width: 35rem;
 }
 
 .flauta .flauta-content{
@@ -392,6 +402,7 @@ img {
     align-items: center;
     -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.78); 
     box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.78);
+    cursor: pointer;
 }
 .flauta-active{
     background: red !important;
@@ -539,6 +550,11 @@ img {
         height: 4rem;
         width: 17rem;
     }
+
+    .flauta .flauta-content .circle {
+        height: 5rem;
+        width: 5rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -565,6 +581,10 @@ img {
     .bateria .bateria-content .bateria-content-img {
         width: 10rem;
         height: 10rem;
+    }
+
+    .flauta .flauta-content {
+        flex-wrap: wrap;
     }
 }
 
