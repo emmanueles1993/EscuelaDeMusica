@@ -4,7 +4,7 @@
 
 Escuela de música es un proyecto educativo que busca poder enseñar a tocar ciertos instrumentos de forma didáctica a cualquier persona, sin que esta tenga el instrumento, esto lo logramos por medio del navegador, utilizando el lenguaje de JavaScript hemos creado una app que permite a los usuarios interactuar con diferentes tipos de instrumentos musicales
 
-![alt text](http://github.com/christianlazo2020/EscuelaDeMusica/blob/main/project_img/piano.png)
+![alt text](https://raw.githubusercontent.com/christianlazo2020/EscuelaDeMusica/main/project_img/home.png)
 
 Home
 [![home](home "home")](http://github.com/christianlazo2020/EscuelaDeMusica/blob/main/project_img/piano.png "home")
