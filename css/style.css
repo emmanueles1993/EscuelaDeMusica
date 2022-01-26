@@ -120,7 +120,7 @@ img {
     text-align: center;
     border-radius: 1rem;
     cursor: pointer;
-    background-color: white;
+    background-color: #e1e1e1;
     border: none;
 }
 
@@ -405,7 +405,7 @@ img {
 /*Flauta styles
 /*****************************************/
 .flauta{
-    height: 100vh;
+    height: 100%;
     padding: 10rem 9%;
     display: flex;
     gap: 2rem;
