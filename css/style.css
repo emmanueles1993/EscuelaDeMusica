@@ -754,6 +754,22 @@ img {
     }
 }
 
+@media (max-height: 640px) {
+    .modal-container .modal img {
+        height: 5rem;
+    }
+
+    .modal-container .modal-text p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-height: 500px) {
+    .modal-container .modal-text p {
+        font-size: 1rem;
+    }
+}
+
 /* Keyframes */
 @keyframes myLinks {
     0%,
