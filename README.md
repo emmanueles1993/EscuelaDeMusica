@@ -7,19 +7,19 @@ Escuela de música es un proyecto educativo que busca poder enseñar a tocar cie
 ![alt text](https://raw.githubusercontent.com/christianlazo2020/EscuelaDeMusica/main/project_img/home.png)
 
 Home
-[![home](home "home")](http://github.com/christianlazo2020/EscuelaDeMusica/blob/main/project_img/piano.png "home")
+[![home](home "home")](https://raw.githubusercontent.com/christianlazo2020/EscuelaDeMusica/main/project_img/home.png)
 Instrumentos
 
 Piano
-[![piano](piano "piano")](http://github.com/christianlazo2020/EscuelaDeMusica/blob/main/project_img/piano.png "piano")
+[![piano](piano "piano")](https://raw.githubusercontent.com/christianlazo2020/EscuelaDeMusica/main/project_img/piano.png)
 Bateria
-[![bateria](bateria "bateria")](http://https://github.com/christianlazo2020/EscuelaDeMusica/blob/main/project_img/Bateria.png "bateria")
+[![bateria](bateria "bateria")](https://raw.githubusercontent.com/christianlazo2020/EscuelaDeMusica/main/project_img/Bateria.png)
 Marimba
-[![marimba](marimba "marimba")](http://github.com/christianlazo2020/EscuelaDeMusica/blob/main/project_img/Marimba.png "marimba")
+[![marimba](marimba "marimba")](https://raw.githubusercontent.com/christianlazo2020/EscuelaDeMusica/main/project_img/Marimba.png)
 Flauta
-[![flauta](flauta "flauta")](https://github.com/christianlazo2020/EscuelaDeMusica/blob/main/project_img/Flauta.png "flauta")
+[![flauta](flauta "flauta")](https://raw.githubusercontent.com/christianlazo2020/EscuelaDeMusica/main/project_img/Flauta.png)
 Sax
-[![sax](sax "sax")](http://https://raw.githubusercontent.com/christianlazo2020/EscuelaDeMusica/main/project_img/Sax.png "sax")
+[![sax](sax "sax")](https://raw.githubusercontent.com/christianlazo2020/EscuelaDeMusica/main/project_img/Sax.png)
 
 ## Construido Con
 
